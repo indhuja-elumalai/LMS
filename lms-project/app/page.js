@@ -1,11 +1,13 @@
-"use client";
-import Navbar from "@/components/Navbar";
+import HeroSection from "@/src/components/sections/HeroSection";
+import FeaturesSection from "@/src/components/sections/FeaturesSection";
+import CTASection from "@/src/components/sections/CTASection";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <h1 className="text-center text-3xl mt-10">Welcome to LMS</h1>
-    </>
+    <main>
+      <HeroSection />
+      <FeaturesSection />
+      <CTASection />
+    </main>
   );
 }
