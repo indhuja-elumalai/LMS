@@ -1,12 +1,15 @@
-import connectDB from "@/lib/db";
 import "./globals.css";
+import Navbar from "@/src/components/layout/Navbar";
+import Footer from "@/src/components/layout/Footer";
 
 export default function RootLayout({ children }) {
-  connectDB(); // ✅ this will trigger the DB connection
-
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
